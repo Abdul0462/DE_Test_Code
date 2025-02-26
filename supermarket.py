@@ -102,7 +102,7 @@ class ModelTrainer:
         r2 = r2_score(y_test, predictions)
         training_time = time.time() - start_time
 
-        logging.info("Model training complete with MSE: %f and R² Score: %f", mse, r2)
+        logging.info("Model training complete with MSE: %f and R2 Score: %f", mse, r2)
         logging.info("Model training time: %.2f seconds", training_time)
 
         return model, mse, r2, training_time
